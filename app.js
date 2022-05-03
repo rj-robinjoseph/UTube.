@@ -38,3 +38,8 @@ $(".slider-nav").slick({
   autoplay: true,
   autoplaySpeed: 3000,
 });
+
+// YouTube Api
+
+let API_KEY = "AIzaSyCdJTAhQCzFq6VOUSOtOP6d80m8EDtGmAA";
+let VIDEO_URL = "https://www.googleapis.com/youtube/v3/videos";
