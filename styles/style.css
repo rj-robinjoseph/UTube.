@@ -143,3 +143,20 @@ nav {
   width: 90%;
   margin: 25px 0;
 }
+
+/* Main Section */
+
+.container {
+  background: #f9f9f9;
+  padding: 20px 2% 20px 17%;
+}
+
+.banner {
+  width: 100%;
+}
+
+.banner img {
+  width: 100%;
+  border-radius: 8px;
+  padding: 0 1px;
+}
