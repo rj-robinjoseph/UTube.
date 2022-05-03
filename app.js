@@ -1,7 +1,11 @@
 var menuIcon = document.querySelector(".menu-icon");
 var sideBar = document.querySelector(".sidebar");
+var container = document.querySelector(".container");
+var slider = document.querySelector(".slider");
 
 menuIcon.addEventListener("click", () => {
+  slider.classList.toggle("large-slider");
+  container.classList.toggle("large-container");
   sideBar.classList.toggle("small-sidebar");
 });
 
@@ -19,7 +23,7 @@ $(".slider-nav").slick({
   slidesToScroll: 1,
   asNavFor: ".slider-for",
   dots: false,
-  fade: true,
+  fade: false,
   focusOnSelect: true,
   autoplay: true,
   autoplaySpeed: 3000,
