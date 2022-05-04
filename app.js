@@ -42,6 +42,19 @@ const getChannelIcon = (video_data) => {
     });
 };
 
+//Search Bar
+
+const searchInput = document.querySelector(".search");
+const searchBtn = document.querySelector(".search-btn");
+
+let searchLink = "https://www.youtube.com/results?search_query=";
+
+searchBtn.addEventListener("click", () => {
+  if (searchInput.value.length) {
+    location.href = searchLink + searchInput.value;
+  }
+});
+
 const makeVideoCard = (data) => {
   listContainer.innerHTML += `
   <div class="vid-list" onclick="location.href='https://youtube.com/watch?v=${data.id}'">
