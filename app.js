@@ -44,12 +44,12 @@ const getChannelIcon = (video_data) => {
 
 const makeVideoCard = (data) => {
   listContainer.innerHTML += `
-  <div class="vid-list">
-  <a href=""><img src="${data.snippet.thumbnails.high.url}" class="thumbnail" /></a>
+  <div class="vid-list" onclick="location.href='https://youtube.com/watch?v=${data.id}'">
+  <img src="${data.snippet.thumbnails.high.url}" class="thumbnail" />
   <div class="flex-div">
     <img src="${data.channelThumbnail}" />
     <div class="vid-info">
-      <a href=""
+      <a href="https://youtube.com/watch?v=${data.id}"
         >${data.snippet.title}</a
       >
       <p>${data.snippet.channelTitle}</p>
